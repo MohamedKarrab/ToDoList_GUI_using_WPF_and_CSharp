@@ -27,9 +27,8 @@
                     
                 </ItemsControl>
             </Grid>
-        
-        <Button x:Name="AddTask" Content="Add Task"  Grid.Row="2" Margin="0,0,200,0" Click="AddTask_Click" />
-        <Button Content="Delete Completed Tasks" Grid.Row="2" Margin="200,0,0,0"/>
-    </Grid>
+
+            <Button x:Name="AddTask" Content="Add Task"  Grid.Row="2" Margin="0,0,0,0" Click="AddTask_Click" />
+        </Grid>
     </Border>
 </Window>
