@@ -1,0 +1,35 @@
+﻿<Window x:Class="ToDoList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoList"
+        mc:Ignorable="d"
+        Title="ToDoList" Height="650" Width="400">
+    <Border Padding="10">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="45" />
+        </Grid.RowDefinitions>
+            
+        <Label x:Name="Title" Content="ToDoList" HorizontalAlignment="Center" FontSize="40" />
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ListBox x:Name="List" Grid.Row="1"  >
+               
+                </ListBox>
+                <ItemsControl x:Name="checkBoxList" Grid.Column="1" >
+                    
+                </ItemsControl>
+            </Grid>
+        
+        <Button x:Name="AddTask" Content="Add Task"  Grid.Row="2" Margin="0,0,200,0" Click="AddTask_Click" />
+        <Button Content="Delete Completed Tasks" Grid.Row="2" Margin="200,0,0,0"/>
+    </Grid>
+    </Border>
+</Window>
